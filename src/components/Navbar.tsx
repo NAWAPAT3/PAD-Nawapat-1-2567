@@ -35,13 +35,13 @@ export default function Navbar() {
                 <a href="/evaluation">การประเมินนโยบายสาธารณะ</a>
               </li>
               <li className="text-stone-600 hover:text-blue-600 hover:font-bold font-medium mx-4 my-1">
-                <a href="#">ติดต่อ</a>
+                <a href="/contact">ติดต่อ</a>
               </li>
               <li className="text-blue-600 hover:text-white hover:bg-blue-600 mx-4 my-1 border-2 border-blue-600 px-2 rounded-2xl ">
-                <a href="#">LogIn</a>
+                <a href="/signin">LogIn</a>
               </li>
               <li className="text-white bg-blue-600 px-2 rounded-2xl mx-4 my-1 hover:bg-white hover:text-blue-600 hover:border-2 hover:border-blue-600">
-                <a href="#">SignUp</a>
+                <a href="/">SignUp</a>
               </li>
             </ul>{" "}
             <button className="block p-3 mx-10 md:hidden hover:bg-gray-200 rounded-xl group">
