@@ -202,7 +202,7 @@ export default function AddProduct() {
     </label>
     <div className="mt-2">
     <input
-          onChange={(e) => setBudget(e.target.value)}
+          onChange={(e) => setbudget(e.target.value)}
           value={budget}
           className="input input-bordered input-accent w-full max-w-xs"
           type="number"
