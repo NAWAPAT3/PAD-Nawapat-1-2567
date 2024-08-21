@@ -256,7 +256,7 @@ export default function AddProduct() {
           value={evaluation}
           className="input input-bordered input-accent w-full max-w-xs"
           type="text"
-          placeholder="Product Category"
+          placeholder="ผลประเมิน"
         />
 
       {/* <input
@@ -281,7 +281,7 @@ export default function AddProduct() {
           value={strength}
           className="input input-bordered input-accent w-full max-w-xs"
           type="text"
-          placeholder="Product Category"
+          placeholder="จุดแข็ง"
         />
 
       {/* <input
@@ -306,7 +306,7 @@ export default function AddProduct() {
           value={weak}
           className="input input-bordered input-accent w-full max-w-xs"
           type="text"
-          placeholder="Product Category"
+          placeholder="จุดอ่อน"
         />
 
       {/* <input
@@ -331,7 +331,7 @@ export default function AddProduct() {
           value={deverlopment}
           className="input input-bordered input-accent w-full max-w-xs"
           type="text"
-          placeholder="Product Category"
+          placeholder="แนวทางเสริมจุดแข็ง"
         />
 
       {/* <input
@@ -381,7 +381,7 @@ export default function AddProduct() {
           value={suggestion}
           className="input input-bordered input-accent w-full max-w-xs"
           type="text"
-          placeholder="Product Category"
+          placeholder="ข้อเสนอแนะ"
         />
 
       {/* <input
