@@ -31,7 +31,7 @@ export default async function EditProduct({ params }) {
     evaluation, 
     strength, 
     weak, 
-    deverlopment, 
+    development, 
     suggestion
      } = product;
 
@@ -48,7 +48,7 @@ export default async function EditProduct({ params }) {
     evaluation={evaluation}
     strength={strength} 
     weak={weak}
-    deverlopment={deverlopment}
+    development={development}
     suggestion={suggestion}
       // 
     />

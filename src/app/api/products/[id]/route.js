@@ -16,7 +16,7 @@ export async function PUT(request, { params }) {
     newevaluation: evaluation,
     newStrength: strength,
     newWeak: weak,
-    newDeverlopment: deverlopment,
+    newDevelopment: development,
     newSuggestion: suggestion,
   } = await request.json();
   await connectMongoDB();
@@ -31,7 +31,7 @@ export async function PUT(request, { params }) {
     evaluation, 
     strength, 
     weak, 
-    deverlopment, 
+    development, 
     suggestion
    });
   return NextResponse.json({ message: "Product updated" }, { status: 200 });

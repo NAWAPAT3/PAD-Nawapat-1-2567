@@ -21,7 +21,7 @@ export async function POST(request) {
     evaluation, 
     strength, 
     weak, 
-    deverlopment, 
+    development, 
     suggestion
    } = await request.json();
   await connectMongoDB();
@@ -36,7 +36,7 @@ export async function POST(request) {
       evaluation, 
       strength, 
       weak, 
-      deverlopment, 
+      development, 
       suggestion 
     });
   return NextResponse.json({ message: "Product Created" }, { status: 201 });

@@ -15,7 +15,7 @@ export default function AddProduct() {
   const [evaluation, setEvaluation] = useState("");
   const [strength, setStrength] = useState("");
   const [weak, setWeak] = useState("");
-  const [deverlopment, setDeverlopment] = useState("");
+  const [development, setDevelopment] = useState("");
   const [suggestion, setSuggestion] = useState("");
 
   const router = useRouter();
@@ -45,7 +45,7 @@ export default function AddProduct() {
     evaluation, 
     strength, 
     weak, 
-    deverlopment, 
+    development, 
     suggestion
            }),
       });
@@ -67,7 +67,7 @@ export default function AddProduct() {
         <h1 className="font-bold py-10 text-2xl">Add New Product</h1>
       </div>
       <form onSubmit={handleSubmit} className="flex flex-col gap-3">
-       
+
       <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-10 ml-24">
   <div className="sm:col-span-3">
     <label
@@ -327,8 +327,8 @@ export default function AddProduct() {
     </label>
     <div className="mt-2">
     <input
-          onChange={(e) => setDeverlopment(e.target.value)}
-          value={deverlopment}
+          onChange={(e) => setDevelopment(e.target.value)}
+          value={development}
           className="input input-bordered input-accent w-full max-w-xs"
           type="text"
           placeholder="แนวทางเสริมจุดแข็ง"
