@@ -23,10 +23,10 @@ export default function AddProduct() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (!name || !image) {
-      alert("Name and image are required.");
-      return;
-    }
+    // if (!name || !image) {
+    //   alert("Name and image are required.");
+    //   return;
+    // }
 
     try {
       const res = await fetch("http://localhost:3000/api/products", {
@@ -35,7 +35,7 @@ export default function AddProduct() {
           "Content-type": "application/json",
         },
         body: JSON.stringify({ 
-          name,   
+    name,   
     project, 
     implementation, 
     email, 
@@ -106,8 +106,8 @@ export default function AddProduct() {
           value={project}
           className="input input-bordered input-accent w-full max-w-xs"
           type="text"
-          placeholder="/images/1.jpg"
-          defaultValue="/images/1.jpg"
+          placeholder="โครงการ"
+          // defaultValue="/images/1.jpg"
         />
       {/* <input
         type="text"
@@ -255,7 +255,7 @@ export default function AddProduct() {
           onChange={(e) => setEvaluation(e.target.value)}
           value={evaluation}
           className="input input-bordered input-accent w-full max-w-xs"
-          type="text"
+          type="number"
           placeholder="ผลประเมิน"
         />
 
@@ -323,7 +323,7 @@ export default function AddProduct() {
       htmlFor="last-name"
       className="block text-sm font-medium leading-6 text-gray-900"
     >
-      แนวทางเสริม(จุดแข็ง)
+      แนวทางเสริมจุดแข็ง
     </label>
     <div className="mt-2">
     <input

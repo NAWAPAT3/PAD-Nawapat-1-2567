@@ -37,9 +37,8 @@ export default async function EditProduct({ params }) {
 
   return (
     <EditProductForm
-      id={id}
-      name={name}
-      project={project}
+    name={name}
+    project={project}
     implementation={implementation}
     email={email}
     mobile={mobile}

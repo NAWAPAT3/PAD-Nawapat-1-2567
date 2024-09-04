@@ -156,7 +156,7 @@ export default function EditProductForm({
             onChange={(e) => setNewMobile(e.target.value)}
             value={newMobile}
             className="input input-bordered input-accent w-full max-w-xs"
-            type="text"
+            type="number"
           />
             </div>
           </div>
@@ -173,7 +173,7 @@ export default function EditProductForm({
             onChange={(e) => setNewBudget(e.target.value)}
             value={newBudget}
             className="input input-bordered input-accent w-full max-w-xs"
-            type="text"
+            type="number"
           />
             </div>
           </div>
@@ -190,7 +190,7 @@ export default function EditProductForm({
             onChange={(e) => setNewYear(e.target.value)}
             value={newYear}
             className="input input-bordered input-accent w-full max-w-xs"
-            type="text"
+            type="number"
           />
             </div>
           </div>
@@ -207,7 +207,7 @@ export default function EditProductForm({
             onChange={(e) => setNewEvaluation(e.target.value)}
             value={newEvaluation}
             className="input input-bordered input-accent w-full max-w-xs"
-            type="text"
+            type="number"
           />
             </div>
           </div>

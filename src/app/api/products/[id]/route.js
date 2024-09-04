@@ -7,7 +7,7 @@ export async function PUT(request, { params }) {
   const { id } = params;
   const {
     newName: name,
-    newProject: project,
+    newproject: project,
     newImplementation: implementation,
     newEmail: email,
     newMobile: mobile,
