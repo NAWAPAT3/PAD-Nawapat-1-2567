@@ -39,7 +39,7 @@ export async function POST(request) {
       development, 
       suggestion 
     });
-  return NextResponse.json({ message: "Product Created" }, { status: 201 });
+  return NextResponse.json({ message: "Product Created" }, { status: 200 });
 }
 
 export async function DELETE(request) {

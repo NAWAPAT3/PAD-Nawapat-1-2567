@@ -16,7 +16,7 @@ export default function EditProductForm({
   strength,
   weak,
   development,
-  suggestion,
+  suggestion
 }) {
   const [newName, setNewTitle] = useState(name);
   const [newProject, setNewProject] = useState(project);
@@ -54,7 +54,7 @@ export default function EditProductForm({
           newStrength,
           newWeak,
           newDevelopment,
-          newSuggestion,
+          newSuggestion
         }),
       });
 
@@ -83,14 +83,38 @@ export default function EditProductForm({
             >
               ยุทธศาสตร์ชาติ
             </label>
-            <div className="mt-2">
+            {/* <div className="mt-2">
               <input
                 onChange={(e) => setNewTitle(e.target.value)}
                 value={newName}
                 className="input input-bordered input-accent w-full max-w-xs"
                 type="text"
               />
-            </div>
+            </div> */}
+            
+            <div className="mt-2">
+    <select className="input input-bordered input-accent w-full max-w-xs"
+    onChange={(e) => setNewTitle(e.target.value)}
+    value={newName}
+    type="text"
+    >
+  <option disabled selected>ดัชนีแผนแม่บทด้านความมั่นคง</option>
+  <option>ดัชนีสันติภาพโลก</option>
+  <option>ดัชนีชี้วัดความสุขโลก</option>
+  <option>ดัชนีสิทธิมนุษยชนและหลักนิติธรรม</option>
+  <option>ดัชนีสถาบันหลัก</option>
+  <option>ดัชนีเสถียรภาพทางการเมือง</option>
+  <option>ดัชนีการมีสิทธิ์มีเสียงของประชาชนและภาระรับผิดชอบ</option>
+  <option>ดัชนีความปลอดภัยจากภัยคุกคาม</option>
+  <option>ดัชนีความสงบสุขภาคใต้</option>
+  <option>ดัชนีความแข็งแกร่งทางกำลังทหาร</option>
+  <option>ดัชนีรัฐเปราะบาง</option>
+  <option>ดัชนีจำนวนเป้าหมายย่อยของเป้าหมายการพัฒนาที่ยั่งยืน ในเป้าหมายที่ 17 บรรลุตามที่กำหนด</option>
+  <option>ระดับประสิทธิภาพการดำเนินงานของหน่วยงานด้านการจัดการความมั่นคง</option>
+</select>
+</div>
+
+
           </div>
 
           <div className="sm:col-span-3">
@@ -107,9 +131,9 @@ export default function EditProductForm({
             className="input input-bordered input-accent w-full max-w-xs"
             type="text"
           />
-            
             </div>
           </div>
+
           <div className="sm:col-span-3">
             <label
               htmlFor="last-name"
@@ -220,7 +244,7 @@ export default function EditProductForm({
               จุดแข็ง
             </label>
             <div className="mt-2">
-            <input
+            <textarea
             onChange={(e) => setNewStrength(e.target.value)}
             value={newStrength}
             className="input input-bordered input-accent w-full max-w-xs"
@@ -237,7 +261,7 @@ export default function EditProductForm({
               จุดอ่อน
             </label>
             <div className="mt-2">
-              <input
+              <textarea
             onChange={(e) => setNewWeak(e.target.value)}
             value={newWeak}
             className="input input-bordered input-accent w-full max-w-xs"
@@ -254,7 +278,7 @@ export default function EditProductForm({
       จุดที่ควรพัฒนา
     </label>
     <div className="mt-2">
-    <input
+    <textarea
             onChange={(e) => setNewDevelopment(e.target.value)}
             value={newDevelopment}
             className="input input-bordered input-accent w-full max-w-xs"
@@ -271,7 +295,7 @@ export default function EditProductForm({
       ข้อเสนอแนะ
     </label>
     <div className="mt-2">
-    <input
+    <textarea
             onChange={(e) => setNewSuggestion(e.target.value)}
             value={newSuggestion}
             className="input input-bordered input-accent w-full max-w-xs"
