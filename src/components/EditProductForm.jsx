@@ -37,7 +37,7 @@ export default function EditProductForm({
     e.preventDefault();
 
     try {
-      const res = await fetch(`http://localhost:3000/api/products/${id}`, {
+      const res = await fetch(`http://localhost:3000/api/Products?id=${id}`, {
         method: "PUT",
         headers: {
           "Content-type": "application/json",
@@ -72,7 +72,7 @@ export default function EditProductForm({
   return (
     <>
       <div className="flex justify-between items-center">
-        <h1 className="font-bold py-10 text-2xl">Update Product</h1>
+        <h1 className="font-bold py-10 text-2xl"> Update Product </h1>
       </div>
       <form onSubmit={handleSubmit} className="flex flex-col gap-3">
         <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-10 ml-24">
@@ -83,14 +83,6 @@ export default function EditProductForm({
             >
               ยุทธศาสตร์ชาติ
             </label>
-            {/* <div className="mt-2">
-              <input
-                onChange={(e) => setNewTitle(e.target.value)}
-                value={newName}
-                className="input input-bordered input-accent w-full max-w-xs"
-                type="text"
-              />
-            </div> */}
             
             <div className="mt-2">
     <select className="input input-bordered input-accent w-full max-w-xs"
@@ -113,8 +105,6 @@ export default function EditProductForm({
   <option>ระดับประสิทธิภาพการดำเนินงานของหน่วยงานด้านการจัดการความมั่นคง</option>
 </select>
 </div>
-
-
           </div>
 
           <div className="sm:col-span-3">
@@ -167,7 +157,6 @@ export default function EditProductForm({
           />
             </div>
           </div>
-          
           <div className="sm:col-span-3">
             <label
               htmlFor="last-name"
@@ -183,8 +172,7 @@ export default function EditProductForm({
             type="number"
           />
             </div>
-          </div>
-          
+          </div>           
           <div className="sm:col-span-3">
             <label
               htmlFor="last-name"
@@ -303,9 +291,6 @@ export default function EditProductForm({
           />
     </div>
   </div>
-         
-         
-
           <button className="btn btn-primary w-full max-w-xs">
             Update Product
           </button>

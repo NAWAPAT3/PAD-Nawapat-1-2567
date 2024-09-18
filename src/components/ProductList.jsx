@@ -1,4 +1,7 @@
 //components\EditProductForm.jsx
+import * as React from 'react';
+import Button from '@mui/material/Button';
+import EditIcon from '@mui/icons-material/Edit';
 import Link from "next/link";
 import RemoveBtn from "./RemoveBtn";
 // import Image from "next/image";
@@ -55,6 +58,11 @@ export default async function ProductsList() {
               <th>จุดแข็ง</th>
               <th>แนวทางเสริมจุดแข็ง</th>
               <th>ข้อเสนอแนะ</th>
+              <th>
+                <div className='flex justify-center items-center font-bold'>
+                Edit & Delete
+                </div>
+                </th>
             </tr>
           </thead>
           <tbody>
@@ -97,7 +105,10 @@ export default async function ProductsList() {
                 <td>{element.suggestion}</td>
                 <th>
                   <Link href={`/editProduct/${element._id}`}>
-                    <button className="btn btn-primary">Edit</button>
+                    {/* <button className="btn btn-primary">Edit</button> */}
+      <Button variant="contained" color="success">
+        <EditIcon/>
+      </Button>
                   </Link>
                   <RemoveBtn id={element._id} />
                 </th>

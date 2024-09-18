@@ -17,7 +17,7 @@ export async function PUT(request, { params }) {
     newStrength: strength,
     newWeak: weak,
     newDevelopment: development,
-    newSuggestion: suggestion,
+    newSuggestion: suggestion
   } = await request.json();
   await connectMongoDB();
   await Product.findByIdAndUpdate(id, { 
