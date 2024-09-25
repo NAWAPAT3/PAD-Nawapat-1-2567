@@ -34,17 +34,26 @@ export default async function ProductsList() {
           </h1>
         </div>
         <div className="text-left ml-16">
-          <Link className="btn btn-primary" href={"/addProduct"}>
-            Add Product
+          <Link  href={"/addProduct"}>
+          
+            <Button variant="contained" 
+      color="success" 
+      className="font-bold px-12"
+      size="large"
+      >
+          เพิ่มรายการใหม่
+        {/* </> */}
+      </Button>
+
           </Link>
         </div>
         <table className="table">
           <thead>
             <tr>
               <th>
-                <label>
+                {/* <label>
                   <input type="checkbox" className="checkbox" />
-                </label>
+                </label> */}
               </th>
               <th>ยุทธศาสตร์ชาติ</th>
               <th>โครงการ</th>
@@ -66,13 +75,13 @@ export default async function ProductsList() {
             </tr>
           </thead>
           <tbody>
-            {products.map((element) => (
+            {products.map((element, index) => (
               <tr className="hover" key={element._id}>
-                <th>
-                  <label>
+                <th>{index + 1}</th>
+                  {/* <label>
                     <input type="checkbox" className="checkbox" />
                   </label>
-                </th>
+                </th> */}
                 {/* <td>
                   <div className="flex items-center gap-3">
                     <div className="avatar">
@@ -103,14 +112,21 @@ export default async function ProductsList() {
                 <td>{element.strength}</td>
                 <td>{element.development}</td>
                 <td>{element.suggestion}</td>
+
                 <th>
+
+                  <div className="flex justify-center item-center">
                   <Link href={`/editProduct/${element._id}`}>
-                    {/* <button className="btn btn-primary">Edit</button> */}
-      <Button variant="contained" color="success">
+      <Button variant="contained" 
+      color="success" 
+      className="mr-2"
+      size="large"
+      >
         <EditIcon/>
       </Button>
                   </Link>
                   <RemoveBtn id={element._id} />
+                  </div>
                 </th>
               </tr>
             ))}

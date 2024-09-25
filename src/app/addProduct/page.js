@@ -3,6 +3,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import Button from '@mui/material/Button';
 
 export default function AddProduct() {
   const [name, setName] = useState("");
@@ -63,9 +64,19 @@ export default function AddProduct() {
 
   return (
     <>
-      <div className="flex justify-between items-center ml-24">
-        <h1 className="font-bold py-10 text-2xl">Add New Product</h1>
+      <div className="flex justify-center items-center">
+      <Button 
+        variant="contained" 
+      color="success" 
+      className="text-xl font-bold px-20 py-2 mt-5"
+      size="small"
+      >
+         เพิ่มรายการใหม่ 
+      </Button>
+
+        {/* <h1 className="font-bold py-10 text-2xl">Add New Product</h1> */}
       </div>
+
       <form onSubmit={handleSubmit} className="flex flex-col gap-3">
 
       <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-10 ml-24">
@@ -447,9 +458,20 @@ export default function AddProduct() {
           placeholder="Product Category"
         /> */}
 
-        <button type="submit" className="btn btn-primary w-full max-w-xs">
+        {/* <button type="submit" className="btn btn-primary w-full max-w-xs">
           Add Product
-        </button>
+        </button> */}
+        <div className="flex justify-center items-center">
+        <Button 
+        type="submit"
+        variant="contained" 
+      color="success" 
+      className="text-xl font-bold px-12 py-2"
+      size="small"
+      >
+          ยืนยันเพิ่มรายการ
+      </Button>
+      </div>
       </form>
     </>
   );
