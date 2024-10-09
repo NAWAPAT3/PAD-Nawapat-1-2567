@@ -72,7 +72,7 @@ export default function Ai() {
               </div>
               <div className="flex-grow">
                 <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
-                เทคโนโลยี AI กับการขับเคลื่อนนโยบายสาธารณะด้านการเกษตร
+                  เทคโนโลยี AI กับการขับเคลื่อนนโยบายสาธารณะด้านการเกษตร
                 </h2>
                 <p className="leading-relaxed text-base">
                   AI ตรวจโรคในใบมันสำปะหลัง
@@ -110,10 +110,10 @@ export default function Ai() {
               </div>
               <div className="flex-grow">
                 <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
-                เทคโนโลยี AI กับการขับเคลื่อนนโยบายสาธารณะด้านสาธารณะสุข
+                  เทคโนโลยี AI กับการขับเคลื่อนนโยบายสาธารณะด้านสาธารณะสุข
                 </h2>
                 <p className="leading-relaxed text-base">
-                AI ตรวจโรคมะเร็งปอดและลำไส้
+                  AI ตรวจโรคมะเร็งปอดและลำไส้
                 </p>
                 <a className="mt-3 text-indigo-500 inline-flex items-center">
                   Learn More

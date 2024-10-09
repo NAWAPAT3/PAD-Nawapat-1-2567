@@ -76,7 +76,6 @@ export default function Footer() {
                 <a className="text-gray-500/80 hover:text-cyan-600" href="#">
                   ChatGPT
                 </a>{" "}
-              
               </p>
               <p>
                 {" "}
@@ -110,7 +109,6 @@ export default function Footer() {
                 <a className="text-gray-500/80 hover:text-cyan-600" href="#">
                   การทำนุบำรุงศิลปวัฒนธรรม
                 </a>{" "}
-              
               </p>
             </div>
             <div className="flex flex-col my-6 leading-7 md:my-0">
@@ -138,7 +136,6 @@ export default function Footer() {
                 <a className="text-gray-500/80 hover:text-cyan-600" href="#">
                   4
                 </a>{" "}
-              
               </p>
             </div>
             <div className="flex flex-col my-6 leading-7 md:my-0">

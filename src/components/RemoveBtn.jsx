@@ -1,10 +1,10 @@
 //components\RemoveBtn.jsx
 "use client";
-import * as React from 'react';
+import * as React from "react";
 // import Stack from '@mui/material/Stack';
-import Button from '@mui/material/Button';
+import Button from "@mui/material/Button";
 import { useRouter } from "next/navigation";
-import DeleteIcon from '@mui/icons-material/Delete';
+import DeleteIcon from "@mui/icons-material/Delete";
 
 export default function RemoveBtn({ id }) {
   const router = useRouter();
@@ -29,7 +29,7 @@ export default function RemoveBtn({ id }) {
     //   </Button>
     // </button>
     <Button variant="contained" color="success">
-      <DeleteIcon/>
-      </Button>
+      <DeleteIcon />
+    </Button>
   );
 }

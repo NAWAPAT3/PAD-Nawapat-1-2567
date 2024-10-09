@@ -3,7 +3,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import Button from '@mui/material/Button';
+import Button from "@mui/material/Button";
 
 export default function EditProductForm({
   name,
@@ -17,7 +17,7 @@ export default function EditProductForm({
   strength,
   weak,
   development,
-  suggestion
+  suggestion,
 }) {
   const [newName, setNewTitle] = useState(name);
   const [newProject, setNewProject] = useState(project);
@@ -55,7 +55,7 @@ export default function EditProductForm({
           newStrength,
           newWeak,
           newDevelopment,
-          newSuggestion
+          newSuggestion,
         }),
       });
 
@@ -73,14 +73,14 @@ export default function EditProductForm({
   return (
     <>
       <div className="flex justify-center items-center">
-      <Button 
-      variant="contained" 
-      color="success" 
-      className="font-bold px-20 py-2 mt-5"
-      size="small"
-      >
-         Update Product
-      </Button>
+        <Button
+          variant="contained"
+          color="success"
+          className="font-bold px-20 py-2 mt-5"
+          size="small"
+        >
+          Update Product
+        </Button>
         {/* <h1 className="font-bold py-10 text-2xl"> Update Product </h1> */}
       </div>
       <form onSubmit={handleSubmit} className="flex flex-col gap-3">
@@ -92,28 +92,38 @@ export default function EditProductForm({
             >
               ยุทธศาสตร์ชาติ
             </label>
-            
+
             <div className="mt-2">
-    <select className="input input-bordered input-accent w-full max-w-xs"
-    onChange={(e) => setNewTitle(e.target.value)}
-    value={newName}
-    type="text"
-    >
-  <option disabled selected>ดัชนีแผนแม่บทด้านความมั่นคง</option>
-  <option>ดัชนีสันติภาพโลก</option>
-  <option>ดัชนีชี้วัดความสุขโลก</option>
-  <option>ดัชนีสิทธิมนุษยชนและหลักนิติธรรม</option>
-  <option>ดัชนีสถาบันหลัก</option>
-  <option>ดัชนีเสถียรภาพทางการเมือง</option>
-  <option>ดัชนีการมีสิทธิ์มีเสียงของประชาชนและภาระรับผิดชอบ</option>
-  <option>ดัชนีความปลอดภัยจากภัยคุกคาม</option>
-  <option>ดัชนีความสงบสุขภาคใต้</option>
-  <option>ดัชนีความแข็งแกร่งทางกำลังทหาร</option>
-  <option>ดัชนีรัฐเปราะบาง</option>
-  <option>ดัชนีจำนวนเป้าหมายย่อยของเป้าหมายการพัฒนาที่ยั่งยืน ในเป้าหมายที่ 17 บรรลุตามที่กำหนด</option>
-  <option>ระดับประสิทธิภาพการดำเนินงานของหน่วยงานด้านการจัดการความมั่นคง</option>
-</select>
-</div>
+              <select
+                className="input input-bordered input-accent w-full max-w-xs"
+                onChange={(e) => setNewTitle(e.target.value)}
+                value={newName}
+                type="text"
+              >
+                <option disabled selected>
+                  ดัชนีแผนแม่บทด้านความมั่นคง
+                </option>
+                <option>ดัชนีสันติภาพโลก</option>
+                <option>ดัชนีชี้วัดความสุขโลก</option>
+                <option>ดัชนีสิทธิมนุษยชนและหลักนิติธรรม</option>
+                <option>ดัชนีสถาบันหลัก</option>
+                <option>ดัชนีเสถียรภาพทางการเมือง</option>
+                <option>
+                  ดัชนีการมีสิทธิ์มีเสียงของประชาชนและภาระรับผิดชอบ
+                </option>
+                <option>ดัชนีความปลอดภัยจากภัยคุกคาม</option>
+                <option>ดัชนีความสงบสุขภาคใต้</option>
+                <option>ดัชนีความแข็งแกร่งทางกำลังทหาร</option>
+                <option>ดัชนีรัฐเปราะบาง</option>
+                <option>
+                  ดัชนีจำนวนเป้าหมายย่อยของเป้าหมายการพัฒนาที่ยั่งยืน
+                  ในเป้าหมายที่ 17 บรรลุตามที่กำหนด
+                </option>
+                <option>
+                  ระดับประสิทธิภาพการดำเนินงานของหน่วยงานด้านการจัดการความมั่นคง
+                </option>
+              </select>
+            </div>
           </div>
 
           <div className="sm:col-span-3">
@@ -124,12 +134,12 @@ export default function EditProductForm({
               โครงการ
             </label>
             <div className="mt-2">
-            <input
-            onChange={(e) => setNewProject(e.target.value)}
-            value={newProject}
-            className="input input-bordered input-accent w-full max-w-xs"
-            type="text"
-          />
+              <input
+                onChange={(e) => setNewProject(e.target.value)}
+                value={newProject}
+                className="input input-bordered input-accent w-full max-w-xs"
+                type="text"
+              />
             </div>
           </div>
 
@@ -141,12 +151,12 @@ export default function EditProductForm({
               หน่วยงานที่นำไปปฏิบัติ
             </label>
             <div className="mt-2">
-            <input
-            onChange={(e) => setNewImplementation(e.target.value)}
-            value={newImplementation}
-            className="input input-bordered input-accent w-full max-w-xs"
-            type="text"
-          /> 
+              <input
+                onChange={(e) => setNewImplementation(e.target.value)}
+                value={newImplementation}
+                className="input input-bordered input-accent w-full max-w-xs"
+                type="text"
+              />
             </div>
           </div>
 
@@ -158,12 +168,12 @@ export default function EditProductForm({
               อีเมล
             </label>
             <div className="mt-2">
-            <input
-            onChange={(e) => setNewEmail(e.target.value)}
-            value={newEmail}
-            className="input input-bordered input-accent w-full max-w-xs"
-            type="text"
-          />
+              <input
+                onChange={(e) => setNewEmail(e.target.value)}
+                value={newEmail}
+                className="input input-bordered input-accent w-full max-w-xs"
+                type="text"
+              />
             </div>
           </div>
           <div className="sm:col-span-3">
@@ -174,14 +184,14 @@ export default function EditProductForm({
               โทรศัพท์
             </label>
             <div className="mt-2">
-            <input
-            onChange={(e) => setNewMobile(e.target.value)}
-            value={newMobile}
-            className="input input-bordered input-accent w-full max-w-xs"
-            type="number"
-          />
+              <input
+                onChange={(e) => setNewMobile(e.target.value)}
+                value={newMobile}
+                className="input input-bordered input-accent w-full max-w-xs"
+                type="number"
+              />
             </div>
-          </div>           
+          </div>
           <div className="sm:col-span-3">
             <label
               htmlFor="last-name"
@@ -190,15 +200,15 @@ export default function EditProductForm({
               งบประมาณ(ล้านบาท)
             </label>
             <div className="mt-2">
-            <input
-            onChange={(e) => setNewBudget(e.target.value)}
-            value={newBudget}
-            className="input input-bordered input-accent w-full max-w-xs"
-            type="number"
-          />
+              <input
+                onChange={(e) => setNewBudget(e.target.value)}
+                value={newBudget}
+                className="input input-bordered input-accent w-full max-w-xs"
+                type="number"
+              />
             </div>
           </div>
-          
+
           <div className="sm:col-span-3">
             <label
               htmlFor="last-name"
@@ -207,15 +217,15 @@ export default function EditProductForm({
               ปีงบประมาณ
             </label>
             <div className="mt-2">
-            <input
-            onChange={(e) => setNewYear(e.target.value)}
-            value={newYear}
-            className="input input-bordered input-accent w-full max-w-xs"
-            type="number"
-          />
+              <input
+                onChange={(e) => setNewYear(e.target.value)}
+                value={newYear}
+                className="input input-bordered input-accent w-full max-w-xs"
+                type="number"
+              />
             </div>
           </div>
-          
+
           <div className="sm:col-span-3">
             <label
               htmlFor="last-name"
@@ -224,15 +234,15 @@ export default function EditProductForm({
               ผลประเมิน
             </label>
             <div className="mt-2">
-            <input
-            onChange={(e) => setNewEvaluation(e.target.value)}
-            value={newEvaluation}
-            className="input input-bordered input-accent w-full max-w-xs"
-            type="number"
-          />
+              <input
+                onChange={(e) => setNewEvaluation(e.target.value)}
+                value={newEvaluation}
+                className="input input-bordered input-accent w-full max-w-xs"
+                type="number"
+              />
             </div>
           </div>
-          
+
           <div className="sm:col-span-3">
             <label
               htmlFor="last-name"
@@ -241,15 +251,15 @@ export default function EditProductForm({
               จุดแข็ง
             </label>
             <div className="mt-2">
-            <textarea
-            onChange={(e) => setNewStrength(e.target.value)}
-            value={newStrength}
-            className="input input-bordered input-accent w-full max-w-xs"
-            type="text"
-          />
+              <textarea
+                onChange={(e) => setNewStrength(e.target.value)}
+                value={newStrength}
+                className="input input-bordered input-accent w-full max-w-xs"
+                type="text"
+              />
             </div>
           </div>
-         
+
           <div className="sm:col-span-3">
             <label
               htmlFor="last-name"
@@ -259,48 +269,47 @@ export default function EditProductForm({
             </label>
             <div className="mt-2">
               <textarea
-            onChange={(e) => setNewWeak(e.target.value)}
-            value={newWeak}
-            className="input input-bordered input-accent w-full max-w-xs"
-            type="text"
-          />
+                onChange={(e) => setNewWeak(e.target.value)}
+                value={newWeak}
+                className="input input-bordered input-accent w-full max-w-xs"
+                type="text"
+              />
             </div>
           </div>
-          
-          <div className="sm:col-span-3">
-    <label
-      htmlFor="last-name"
-      className="block text-sm font-medium leading-6 text-gray-900"
-    >
-      จุดที่ควรพัฒนา
-    </label>
-    <div className="mt-2">
-    <textarea
-            onChange={(e) => setNewDevelopment(e.target.value)}
-            value={newDevelopment}
-            className="input input-bordered input-accent w-full max-w-xs"
-            type="text"
-          />
-    </div>
-  </div>
-          
-  <div className="sm:col-span-3">
-    <label
-      htmlFor="last-name"
-      className="block text-sm font-medium leading-6 text-gray-900"
-    >
-      ข้อเสนอแนะ
-    </label>
-    <div className="mt-2">
-    <textarea
-            onChange={(e) => setNewSuggestion(e.target.value)}
-            value={newSuggestion}
-            className="input input-bordered input-accent w-full max-w-xs"
-            type="text"
-          />
-    </div>
-  </div>
 
+          <div className="sm:col-span-3">
+            <label
+              htmlFor="last-name"
+              className="block text-sm font-medium leading-6 text-gray-900"
+            >
+              จุดที่ควรพัฒนา
+            </label>
+            <div className="mt-2">
+              <textarea
+                onChange={(e) => setNewDevelopment(e.target.value)}
+                value={newDevelopment}
+                className="input input-bordered input-accent w-full max-w-xs"
+                type="text"
+              />
+            </div>
+          </div>
+
+          <div className="sm:col-span-3">
+            <label
+              htmlFor="last-name"
+              className="block text-sm font-medium leading-6 text-gray-900"
+            >
+              ข้อเสนอแนะ
+            </label>
+            <div className="mt-2">
+              <textarea
+                onChange={(e) => setNewSuggestion(e.target.value)}
+                value={newSuggestion}
+                className="input input-bordered input-accent w-full max-w-xs"
+                type="text"
+              />
+            </div>
+          </div>
 
           {/* <button className="btn btn-primary w-full max-w-xs">
             Update Product
@@ -308,16 +317,16 @@ export default function EditProductForm({
         </div>
 
         <div className="flex justify-center item-center">
-        <Button 
-          type="submit"
-        variant="contained" 
-      color="success" 
-      className="font-bold px-18 py-2"
-      size="large"
-      >
-         Update Product
-      </Button>
-    </div>
+          <Button
+            type="submit"
+            variant="contained"
+            color="success"
+            className="font-bold px-18 py-2"
+            size="large"
+          >
+            Update Product
+          </Button>
+        </div>
       </form>
     </>
   );
