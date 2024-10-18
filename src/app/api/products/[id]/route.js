@@ -17,23 +17,23 @@ export async function PUT(request, { params }) {
     newStrength: strength,
     newWeak: weak,
     newDevelopment: development,
-    newSuggestion: suggestion
+    newSuggestion: suggestion,
   } = await request.json();
   await connectMongoDB();
-  await Product.findByIdAndUpdate(id, { 
-    name, 
-    project, 
-    implementation, 
-    email, 
-    mobile, 
-    budget, 
-    year, 
-    evaluation, 
-    strength, 
-    weak, 
-    development, 
-    suggestion
-   });
+  await Product.findByIdAndUpdate(id, {
+    name,
+    project,
+    implementation,
+    email,
+    mobile,
+    budget,
+    year,
+    evaluation,
+    strength,
+    weak,
+    development,
+    suggestion,
+  });
   return NextResponse.json({ message: "Product updated" }, { status: 200 });
 }
 
